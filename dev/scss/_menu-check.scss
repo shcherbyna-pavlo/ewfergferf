@@ -1,0 +1,111 @@
+#cons,
+#cust,
+#innov,
+#busin {
+   display: none;
+}
+
+
+#cons:checked ~ .menu-check__body .cons {
+   display: block;
+}
+
+#cust:checked ~ .menu-check__body .cust {
+   display: block;
+}
+
+#innov:checked ~ .menu-check__body .innov {
+   display: block;
+}
+
+#busin:checked ~ .menu-check__body .busin {
+   display: block;
+}
+
+#cons:checked ~ .menu-check__list [for="cons"] {
+   background-image: $gradient_red-text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+#cust:checked ~ .menu-check__list [for="cust"] {
+   background-image: $gradient_red-text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+#innov:checked ~ .menu-check__list  [for="innov"] {
+   background-image: $gradient_red-text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+#busin:checked ~ .menu-check__list  [for="busin"] {
+   background-image: $gradient_red-text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.radio {
+   display: none;
+}
+
+.menu-check {
+
+   @media (min-width:768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 0;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+      margin: 0 15px;
+
+      @media (min-width:768px) {
+         flex-direction: column;
+         padding: 0 60px 0 0;
+         border-right: 4px solid rgba(255, 255, 255, 0.3);
+         border-bottom: transparent;
+         text-align: end;
+         margin: 0;
+      }
+   }
+
+   &__click {
+      color: $ladel-color;
+      padding: 30px 30px 30px 0;
+      cursor: pointer;
+      white-space: nowrap;
+
+      @media (min-width:768px) {
+         padding: 15px 0 15px 0;
+      }
+
+      &:hover {
+         color: $accent;
+      }
+   }
+
+   &__body {
+      padding: 30px 15px;
+      font-size: 19px;
+      line-height: 30px;
+   
+      @media (min-width:768px) {
+         max-width: 641px;
+         padding: 0 0 0 60px;
+         text-align: start;
+         color: $basic_white;
+      }
+   }
+
+   &__title {
+      padding: 0 0 30px 0;
+   }
+}
+

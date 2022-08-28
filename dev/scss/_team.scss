@@ -1,0 +1,73 @@
+.team {
+   margin: 50px 15px 39px;
+
+   @media (min-width:768px) {
+      display: flex;
+      flex-direction: row;
+      margin: 80px 0 64px 0;
+      border-radius: 12px;
+   }
+
+   &__photo {
+      max-width: 500px;
+   }
+
+   &__discription {
+      max-width: 920px;
+      background: $team__discription-bg;
+      padding: 30px;
+   }
+
+   &__hero {
+      word-wrap: break-word;
+      padding: 5px 0 30px 0;
+      background: $gradient_red-text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media (min-width:768px) {
+         word-wrap: normal;
+      }
+   }
+
+   &__petay {
+   
+      @media (max-width:767px) {
+         display: none;
+      }
+   }
+
+   &__petay-mobile {
+      max-width: 315px;
+
+      @media (min-width:768px) {
+         display: none;
+      }
+   }
+
+   &__name {
+      color: $team__name;
+   }
+
+   &__position {
+      font-size: 14px;
+      line-height: 22px;
+      color: $team__position;
+   }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+   margin: 0 7px;
+}
+.swiper-pagination-bullet {
+   position: relative;
+   width: 16px;
+   height: 16px;
+   background: $pagination-bg;
+   opacity: 0.2;
+
+   &-active {
+      opacity: 1;
+   }
+}
+

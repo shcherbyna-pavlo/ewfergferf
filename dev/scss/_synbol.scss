@@ -1,0 +1,61 @@
+.main-grad {
+   background: $gradient_supersoft;
+   max-width: 100%;
+   border-radius: 0px 0px 12px 12px;
+}
+
+.symbol {
+   position: relative;
+   color: $basic_white;
+
+   @media (min-width:768px) {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__text-pos {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+   }
+
+   &__btn-pos {
+      position: absolute;
+      display: block;
+      bottom: 30px;
+      left: 50%;
+      transform: translate(-50%);
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      // opacity: 0.5;
+   }
+
+   &__arrow {
+      display: block;
+      font-size: 0;
+      width: 10px;
+      height: 10px;
+      border: 2px solid white;
+      transform: translate(14px, 11px) skew(45deg, -45deg);
+      opacity: 1;
+      border-top: transparent;
+      border-right: transparent;
+
+   }
+
+   &__img {
+      position: relative;
+      top: 0;
+      left: -90px;
+      min-width: 524px;
+
+      @media (min-width:768px) {
+         left: 0;
+      }
+   }
+}
+

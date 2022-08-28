@@ -1,0 +1,305 @@
+#header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-weight: 700;
+    line-height: 20px;
+    z-index: 1;
+
+    @media (min-width:768px) {
+        padding: 50px 0;
+    }
+    
+    .mobile-none {
+
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+
+    .container {
+        @media (max-width:767px) {
+            padding: 0;
+        }
+    }
+}
+
+#drop {
+    display: none;
+
+    &:checked {
+
+        ~ .drop-bg .head__menu{
+            @media (max-width:767px) {
+                display: block;
+            }
+        }
+
+        ~ .drop-bg {
+            @media (max-width:767px) {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: $drop-bg;
+            }
+        }
+
+        + .drop {
+            position: fixed;
+            top: 43px;
+            right: 0;
+
+            span {
+                display: none;
+            }
+
+            &:after {
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
+                background: $drop-check;
+            }
+
+            &:before {
+                top: 50%;
+                transform: translateY(-50%) rotate(-45deg);
+                background: $drop-check;
+            } 
+        }
+    }
+}
+
+.drop {
+    float: right;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    margin: 13px 15px 0 0;
+    z-index: 2;
+
+    @media (min-width:768px) {
+        display: none;
+    }
+
+    &:after,
+    &:before,
+    span {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        left: 7px;
+        font-size: 0;
+        line-height: 0;
+        background: $burger-pseudo;
+    }
+
+    &:after {
+        top: 10px;
+    }
+
+    &:before {
+        top: 50%;
+    }
+
+    span {
+        top: 22px;
+    }
+}
+
+
+.head {
+
+    @media (min-width:768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    &__text {
+
+        @media (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__menu-top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width:767px) {
+            background: $head__mobile-bg;
+            padding: 4px 15px 0;
+        }
+    }
+    
+    &__info {
+        position: relative;
+        display: flex;
+        padding: 10px 0;
+        max-width: 100%;
+        
+        &-contact {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            text-align: end;
+            
+            &:before {
+
+                @media (min-width:768px) {
+                    content: '';
+                    display: block;
+                    top: 50%;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: $head__point;
+                    margin: 0 6px;
+                }
+            }
+        }
+
+        @media (min-width:768px){
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+        }
+    }
+
+    &__lang {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__info-lang {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        display: inline-block;
+        
+    }
+
+    &__lang-link {
+        display: block;
+        color: $head__lang-link;
+        padding: 5px 7px;
+        border-radius: 8px;
+
+        &--active {
+            background: $lang-link--active;
+        }
+
+        &:hover {
+            background: $head__lang-hover;
+        }
+    }
+
+    &__contact-link {
+        color: $head__contact-link;
+
+        &--fw-reg {
+            font-weight: 400;
+        }
+    }
+    
+    &__logo {
+        width: 70px;
+        margin: 15px 0 0 15px;
+        @media (min-width:768px) {
+            width: 130px;
+            margin: 0;
+        }
+    }
+
+    &__logo-link {
+        display: block;
+    }
+
+    &__fb {
+        font-size: 24px;
+        
+        &:hover {
+            color: $head__fb-hover;
+        }
+    }
+
+    &__menu {
+        position: fixed;
+        top: 5px;
+        right: 8px;
+        left: 8px;
+        background: $head__menu-mobile-bg;
+        padding: 110px 0 0 0;
+        border-radius: 12px;
+        height: calc(100vh - 10px);
+        overflow-y: auto;
+
+        @media (min-width:768px) {
+            position: static;
+            background: transparent;
+            display: flex;
+            flex-direction: row;
+            margin:0;
+            padding: 18px 0 0 0;
+            justify-content: end;
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    &__menu-list {
+        padding: 0px 5px 15px;
+        border-radius: 12px;
+
+        @media (min-width:768px){
+            padding: 0 0 0 15px;
+        }
+    }
+
+    &__menu-link {
+        display: block;
+        padding: 7px 0;
+        border-radius: 12px;
+        text-align: center;
+        background: $grey_bg;
+        color: $head__menu-link--mobile;
+
+        @media (min-width:768px) {
+            padding: 0;
+            border-radius: 0;
+            background: transparent;
+            position: relative;
+            color: $head__menu-link;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            height: 2px;
+            width: 0;
+            transition: all 0.8s;
+        }
+
+        &:hover:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background: $head__menu-link-hover;
+        }
+    }
+}
