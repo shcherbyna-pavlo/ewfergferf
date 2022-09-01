@@ -1,0 +1,28 @@
+.brand {
+    max-width: 1440px;
+    margin: 42px auto 0;
+    text-align: center;
+
+    &__h3-caps {
+        margin: 0 0 30px;
+    }
+
+    &__grid-box {
+        width: 375px;
+        @media (min-width:992px) {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 120px);
+        }
+    }
+
+    &__img {
+        display: block;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
