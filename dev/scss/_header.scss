@@ -10,13 +10,6 @@
     @media (min-width:768px) {
         padding: 50px 0;
     }
-    
-    .mobile-none {
-
-        @media (max-width:767px) {
-            display: none;
-        }
-    }
 
     .container {
         @media (max-width:767px) {

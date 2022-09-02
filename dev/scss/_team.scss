@@ -1,7 +1,7 @@
 .team {
    margin: 50px 15px 39px;
 
-   @media (min-width:768px) {
+   @media (min-width:992px) {
       display: flex;
       flex-direction: row;
       margin: 80px 0 64px 0;
@@ -9,8 +9,40 @@
    }
 
    &__photo {
-      max-width: 500px;
+      height: 500px;
+      overflow: hidden;
+
+      @media (min-width:992px) {
+         width: 400px;
+         height: 344px;
+      }
+
+      img {
+         width: 500px;
+         height: 500px;
+         max-width: none;
+      }
    }
+
+   &__btn {
+      position: relative;
+      width: 87px;
+      color: #24A3FF;
+      
+      &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 87px;
+          top: 4px;
+          transform: rotate(45deg);
+          width: 8px;
+          height: 8px;
+          border: 2px solid #24A3FF;
+          border-left: transparent;
+          border-bottom: transparent;
+      }
+  }
 
    &__discription {
       max-width: 920px;
@@ -30,26 +62,13 @@
       }
    }
 
-   &__petay {
-   
-      @media (max-width:767px) {
-         display: none;
-      }
-   }
-
-   &__petay-mobile {
-      max-width: 315px;
-
-      @media (min-width:768px) {
-         display: none;
-      }
-   }
-
    &__name {
       color: $team__name;
    }
 
    &__position {
+      display: block;
+      padding-top: 6px;
       font-size: 14px;
       line-height: 22px;
       color: $team__position;

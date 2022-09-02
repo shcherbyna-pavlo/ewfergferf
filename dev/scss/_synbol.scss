@@ -1,7 +1,33 @@
 .main-grad {
+   position: relative;
    background: $gradient_supersoft;
    max-width: 100%;
    border-radius: 0px 0px 12px 12px;
+
+   &:after,
+   &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 40px;
+      border-radius: 12px;
+   }
+   
+   &:after {
+      bottom: -10px;
+      left: 20px;
+      right: 20px;
+      background: #CACADB;
+      z-index: -1;
+   }
+
+   &:before {
+      bottom: -20px;
+      left: 40px;
+      right: 40px;
+      background: #E7E7F2;
+      z-index: -2;
+   }
 }
 
 .symbol {
@@ -37,14 +63,13 @@
    &__arrow {
       display: block;
       font-size: 0;
-      width: 10px;
-      height: 10px;
+      width: 13px;
+      height: 13px;
       border: 2px solid white;
-      transform: translate(14px, 11px) skew(45deg, -45deg);
+      transform: translate(12px, 11px) rotate(45deg);
       opacity: 1;
+      border-left: transparent;
       border-top: transparent;
-      border-right: transparent;
-
    }
 
    &__img {
