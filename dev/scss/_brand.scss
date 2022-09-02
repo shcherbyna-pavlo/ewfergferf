@@ -8,7 +8,7 @@
     }
 
     &__grid-box {
-        width: 375px;
+        margin: 0 auto;
         @media (min-width:992px) {
             width: 100%;
             display: grid;
@@ -21,8 +21,12 @@
         display: block;
 
         img {
-            height: 100%;
-            object-fit: cover;
+            min-width: 375px;
+            @media (min-width:768px) {
+                min-width: auto;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }
