@@ -1,6 +1,14 @@
 .brand {
     max-width: 1440px;
     margin: 42px auto 0;
+
+    .mobile-none {
+    
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+    
     text-align: center;
 
     &__h3-caps {
@@ -37,4 +45,5 @@
             }
         }
     }
+
 }
