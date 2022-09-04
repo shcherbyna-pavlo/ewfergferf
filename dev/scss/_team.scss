@@ -13,7 +13,11 @@
       overflow: hidden;
       height: 500px;
 
-      
+      @media (min-width:992px) {
+         width: 400px;
+         height: auto;
+      }
+
       img {
          width: 100%;
          height: 100%;
@@ -29,17 +33,26 @@
       color: #24A3FF;
       
       &:after {
-          content: '';
-          display: block;
-          position: absolute;
-          left: 87px;
-          top: 4px;
-          transform: rotate(45deg);
-          width: 8px;
-          height: 8px;
-          border: 2px solid #24A3FF;
-          border-left: transparent;
-          border-bottom: transparent;
+         content: '';
+         display: block;
+         position: absolute;
+         left: 87px;
+         top: 4px;
+         transform: rotate(45deg);
+         width: 8px;
+         height: 8px;
+         border: 2px solid #24A3FF;
+         border-left: transparent;
+         border-bottom: transparent;
+      }
+
+      &:hover {
+         color: #F0145A;
+      }
+      &:hover:after {
+         border: 2px solid #F0145A;
+         border-left: transparent;
+         border-bottom: transparent;
       }
   }
 

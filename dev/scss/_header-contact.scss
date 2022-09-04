@@ -1,0 +1,51 @@
+.head {
+   &__logo {
+      color:#323264;
+      position: relative;
+      font-size: 20px;
+      line-height: 24px;
+      z-index: -1;
+
+      @media (min-width:768px) {
+         font-size: 36px;
+         line-height: 44px;
+      }
+   }
+   
+   &__contact-page {
+      position: absolute;
+      top: 0;
+      left: 160px;
+
+      &:before {
+         content: '';
+         display: block;
+         position: absolute;
+         left: -18px;
+         width: 5px;
+         height: 47px;
+         background: #F0145A;
+         transform: skewX(-18deg);
+      }
+   }
+
+   &__lang-link {
+      color: #B3B3BA;
+
+      &--active {
+         color: #fff;
+     }
+   }
+
+   &__contact-link {
+      color: #B3B3BA;
+   }
+
+   &__menu-link {
+      color: #24A3FF;
+
+      &--active {
+         color: #F0145A;
+      }
+   }
+}

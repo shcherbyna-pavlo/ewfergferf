@@ -77,12 +77,19 @@ h4 {
     line-height: 20px;
 }
 
+.hero-mobile {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+
 .hero {
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
     
     @media (min-width:768px) {
+        font-weight: 700;
         font-size: 38px;
         line-height: 46px;
     }

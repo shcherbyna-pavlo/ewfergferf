@@ -12,7 +12,7 @@
       height: 40px;
       border-radius: 12px;
    }
-   
+
    &:after {
       bottom: -10px;
       left: 20px;
@@ -57,7 +57,16 @@
       width: 42px;
       height: 42px;
       border: 2px solid rgba(255, 255, 255, 0.5);
-      // opacity: 0.5;
+
+      &:hover {
+         border: 2px solid rgba(240, 20, 90, 0.5);
+      }
+
+      &:hover .symbol__arrow {
+         border: 2px solid #F0145A;
+         border-left: transparent;
+         border-top: transparent;
+      }
    }
 
    &__arrow {
@@ -70,15 +79,18 @@
       opacity: 1;
       border-left: transparent;
       border-top: transparent;
+      
    }
-
+   
    &__img {
       position: relative;
       top: 0;
-      left: -90px;
+      left: 50%;
+      transform: translateX(-50%);
       min-width: 524px;
-
+      
       @media (min-width:768px) {
+         transform: translateX(0%);
          left: 0;
       }
    }

@@ -69,6 +69,16 @@
             border-left: transparent;
             border-bottom: transparent;
         }
+
+        &:hover {
+            color: #F0145A;
+        }
+
+        &:hover:after {
+            border: 2px solid #F0145A;
+            border-left: transparent;
+            border-bottom: transparent;
+        }
     }
 
     &__h3-caps {
@@ -76,6 +86,6 @@
         @media (max-width:434px) {
             padding: 0 15px;
         }
-        color: $line-cards__h3-caps;
+        // color: $line-cards__h3-caps;
     }
 }
