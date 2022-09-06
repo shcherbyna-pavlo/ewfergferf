@@ -5,50 +5,53 @@
    display: none;
 }
 
+.menu-check__body {
 
-#cons:checked ~ .menu-check__body .cons {
-   display: block;
 }
 
-#cust:checked ~ .menu-check__body .cust {
-   display: block;
-}
+// #cons:checked ~ .menu-check__body .cons {
+//    display: block;
+// }
 
-#innov:checked ~ .menu-check__body .innov {
-   display: block;
-}
+// #cust:checked ~ .menu-check__body .cust {
+//    display: block;
+// }
 
-#busin:checked ~ .menu-check__body .busin {
-   display: block;
-}
+// #innov:checked ~ .menu-check__body .innov {
+//    display: block;
+// }
 
-#cons:checked ~ .menu-check__list [for="cons"] {
+// #busin:checked ~ .menu-check__body .busin {
+//    display: block;
+// }
+
+#cons:checked ~.swiper .menu-check__list [for="cons"] {
    background-image: $gradient_red-text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 
-#cust:checked ~ .menu-check__list [for="cust"] {
+#cust:checked ~ .swiper .menu-check__list [for="cust"] {
    background-image: $gradient_red-text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 
-#innov:checked ~ .menu-check__list  [for="innov"] {
+#innov:checked ~ .swiper .menu-check__list [for="innov"] {
    background-image: $gradient_red-text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 
-#busin:checked ~ .menu-check__list  [for="busin"] {
+#busin:checked ~ .swiper .menu-check__list [for="busin"] {
    background-image: $gradient_red-text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 
-.radio {
-   display: none;
-}
+// .radio {
+//    display: none;
+// }
 
 .menu-check {
 
@@ -63,15 +66,24 @@
    &__list {
       display: flex;
       flex-direction: row;
-      border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+      // border-bottom: 4px solid rgba(255, 255, 255, 0.3);
 
       @media (min-width:992px) {
          flex-direction: column;
          padding: 0 60px 0 0;
-         border-right: 4px solid rgba(255, 255, 255, 0.3);
-         border-bottom: transparent;
+         // border-right: 4px solid rgba(255, 255, 255, 0.3);
+         // border-bottom: transparent;
          text-align: end;
          margin: 0;
+      }
+   }
+
+   &__body {
+      border-top: 4px solid rgba(255, 255, 255, 0.3);
+
+      @media (min-width:992px) {
+         border-left: 4px solid rgba(255, 255, 255, 0.3);
+         border-top: transparent;
       }
    }
 
@@ -113,5 +125,17 @@
 
    @media (min-width:992px) {
       padding: 0;
+      margin: 0 !important;
    }
+}
+
+.swiper-wrapper {
+   width: 100%;
+}
+
+.mySwiper3 {
+   height: 303px!important;
+}
+.mySwiper2 {
+   height: 303px!important;
 }

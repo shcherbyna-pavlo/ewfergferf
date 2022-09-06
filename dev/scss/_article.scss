@@ -1,6 +1,6 @@
 .article {
     max-width: 100%;
-    padding: 30px 0 30px 0;
+    padding: 20px 0 30px 0;
     text-align: left;
     background: $grey_bg;
 
@@ -8,6 +8,7 @@
         position: relative;
         width: 122px;
         color: #24A3FF;
+        transition: all .8s;
         
         &:after {
             content: '';
@@ -19,6 +20,17 @@
             width: 8px;
             height: 8px;
             border: 2px solid #24A3FF;
+            border-left: transparent;
+            border-bottom: transparent;
+            transition: all .8s;
+        }
+
+        &:hover {
+            color: #F0145A;
+        }
+
+        &:hover:after {
+            border: 2px solid #F0145A;
             border-left: transparent;
             border-bottom: transparent;
         }
@@ -55,6 +67,7 @@
         position: relative;
         overflow: hidden;
         height: 200px;
+        overflow: hidden;
 
         img {
            width: 100%;
@@ -62,6 +75,11 @@
            object-fit: cover;
            object-position: 50% 50%;
            max-width: none;
+           transition: transform .8s;
+
+           &:hover {
+            transform: scale(1.2);
+           }
         }
     }
 
@@ -92,6 +110,11 @@
 
     &__title {
         color: #24A3FF;
+        transition: color .8s;
+
+        &:hover {
+            color: #F0145A;
+        }
     }
 
     &__card-body {

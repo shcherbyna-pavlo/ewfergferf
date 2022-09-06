@@ -55,6 +55,7 @@
         position: relative;
         width: 80px;
         color: #24A3FF;
+        transition: all .8s;
         
         &:after {
             content: '';
@@ -68,6 +69,7 @@
             border: 2px solid #24A3FF;
             border-left: transparent;
             border-bottom: transparent;
+            transition: all .8s;
         }
 
         &:hover {

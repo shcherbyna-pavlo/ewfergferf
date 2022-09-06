@@ -58,59 +58,63 @@
                             <img src="images/Symbol.svg" alt="symbol">
                         </div>
                         <span class="symbol__text-pos">you legal solutions provider</span>
-                        <a href="#" class="symbol__btn-pos"><span class="symbol__arrow">a</span></a>
+                        <a href="#check" class="symbol__btn-pos"><span class="symbol__arrow">a</span></a>
                     </div>
-                    <div class="menu-check">
+                    <div id="check" class="menu-check">
                         <input id="cons" name="chek" type="radio" checked>
                         <input id="cust" name="chek" type="radio">
                         <input id="innov" name="chek" type="radio">
                         <input id="busin" name="chek" type="radio">
-                        <div class="menu-check__list menu-check__swiper">
-                            <label class="hero menu-check__click" for="cons">Consistent</label>
-                            <label class="hero menu-check__click" for="cust">Customer oriented</label>
-                            <label class="hero menu-check__click" for="innov">Innovative</label>
-                            <label class="hero menu-check__click" for="busin">Business oriented</label>
+                        <div class="swiper mySwiper2">
+                            <div class="menu-check__list menu-check__swiper swiper-wrapper">
+                                <label class="hero menu-check__click swiper-slide" for="cons">Consistent</label>
+                                <label class="hero menu-check__click swiper-slide" for="cust">Customer oriented</label>
+                                <label class="hero menu-check__click swiper-slide" for="innov">Innovative</label>
+                                <label class="hero menu-check__click swiper-slide" for="busin">Business oriented</label>
+                            </div>
                         </div>
-                        <div class="menu-check__body">
-                            <div class="cons radio">
-                                <h2 class="menu-check__title">We turn the idea of legal services</h2>
-                                <p>
-                                    Consolidating many years of experience and practice, the
-                                    company's lawyers accompany complex projects and
-                                    achieve a number of important decisions for the industry.
-                                    Many of them form the practice of applying the law of the
-                                    sea in Ukraine.
-                                </p>
-                            </div>
-                            <div class="cust radio">
-                                <h2 class="menu-check__title">We turn the idea of legal services</h2>
-                                <p>
-                                    Consolidating many years of experience and practice, the 
-                                    company's lawyers accompany complex projects and 
-                                    achieve a number of important decisions for the industry.
-                                </p>
-                            </div>
-                            <div class="innov radio">
-                                <h2 class="menu-check__title">We turn the idea of </h2>
-                                <p>
-                                    Consolidating many years of experience and practice, the 
-                                    company's lawyers accompany complex projects and 
-                                    achieve
-                                </p>
-                            </div>
-                            <div class="busin radio">
-                                <h2 class="menu-check__title">We turn the idea of legal services</h2>
-                                <p>
-                                    Consolidating many years of experience and practice, the 
-                                    company's lawyers accompany complex projects and 
-                                    achieve a number of important decisions for the industry. 
-                                </p>
+                        <div class="swiper mySwiper3">
+                            <div class="menu-check__body swiper-wrapper">
+                                <div class="cons radio swiper-slide">
+                                    <h3 class="menu-check__title">We turn the idea of legal services</h3>
+                                    <p>
+                                        Consolidating many years of experience and practice, the
+                                        company's lawyers accompany complex projects and
+                                        achieve a number of important decisions for the industry.
+                                        Many of them form the practice of applying the law of the
+                                        sea in Ukraine.
+                                    </p>
+                                </div>
+                                <div class="cust radio swiper-slide">
+                                    <h3 class="menu-check__title">We turn the idea of legal services</h3>
+                                    <p>
+                                        Consolidating many years of experience and practice, the 
+                                        company's lawyers accompany complex projects and 
+                                        achieve a number of important decisions for the industry.
+                                    </p>
+                                </div>
+                                <div class="innov radio swiper-slide">
+                                    <h3 class="menu-check__title">We turn the idea of </h3>
+                                    <p>
+                                        Consolidating many years of experience and practice, the 
+                                        company's lawyers accompany complex projects and 
+                                        achieve
+                                    </p>
+                                </div>
+                                <div class="busin radio swiper-slide">
+                                    <h3 class="menu-check__title">We turn the idea of legal services</h3>
+                                    <p>
+                                        Consolidating many years of experience and practice, the 
+                                        company's lawyers accompany complex projects and 
+                                        achieve a number of important decisions for the industry. 
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="line-cards">
-                        <a class="line-cards__btn" href="#"><h3 class="h3-caps line-cards__h3-caps">Services</h3></a>
-                        <span class="hero line-cards__hero">What can we do better than others?</span>
+                        <a class="line-cards__btn h3-caps line-cards__h3-caps" href="#">Services</a>
+                        <h2 class="hero line-cards__hero">What can we do better than others?</h2>
                         <ul class="line-cards__list">
                             <li class="line-cards__list-li">
                                 <div class="line-cards__card">
@@ -210,7 +214,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="swiper">
+                <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="team">
@@ -218,15 +222,38 @@
                                     <img src="images/alexandr.png" alt="alexandr">
                                 </div>
                                 <div class="team__discription">
+                                    <a class="team__btn h3-caps" href="#">команда</a>
+                                    <blockquote class="hero team__hero">
+                                        <p>
+                                            Ми звикли брати на себе відповідальність та завжди 
+                                            гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, 
+                                            коли більшість безсилі.
+                                        </p>
+                                    </blockquote>
+                                    <figcaption>
+                                        <span class="team__name">Олександр Олександровський</span>
+                                        <span class="team__position">Керуючий партнер</span>
+                                    </figcaption>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team">
+                                <div class="team__photo">
+                                    <img src="images/oksana.png" alt="oksana">
+                                </div>
+                                <div class="team__discription">
                                     <a class="team__btn" href="#"><h3 class="h3-caps">команда</h3></a>
                                     <blockquote class="hero team__hero">
-                                        Ми звикли брати на себе відповідальність та завжди 
-                                        гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, 
-                                        коли більшість безсилі.
+                                        <p>
+                                            Ми звикли брати на себе відповідальність та завжди 
+                                            гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, 
+                                            коли більшість безсилі.
+                                        </p>
                                     </blockquote>
                                     <figcaption>
-                                        <h4 class="team__name">Олександр Олександровський</h4>
-                                        <span class="team__position">Керуючий партнер</span>
+                                        <span class="team__name">Оксана Кобзар</span>
+                                        <span class="team__position">Партнер, адвокат</span>
                                     </figcaption>
                                 </div>
                             </div>
@@ -234,37 +261,20 @@
                         <div class="swiper-slide">
                             <div class="team">
                                 <div class="team__photo">
-                                    <img src="images/alexandr.png" alt="alexandr">
+                                    <img src="images/sergey.png" alt="sergey">
                                 </div>
                                 <div class="team__discription">
-                                    <h3 class="h3-caps">команда</h3>
+                                    <a class="team__btn" href="#"><h3 class="h3-caps">команда</h3></a>
                                     <blockquote class="hero team__hero">
-                                        Ми звикли брати на себе відповідальність та завжди 
-                                        гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, 
-                                        коли більшість безсилі.
+                                        <p>
+                                            Ми звикли брати на себе відповідальність та завжди 
+                                            гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, 
+                                            коли більшість безсилі.
+                                        </p>
                                     </blockquote>
                                     <figcaption>
-                                        <h4 class="team__name">Олександр Олександровський</h4>
-                                        <span class="team__position">Керуючий партнер</span>
-                                    </figcaption>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="team">
-                                <div class="team__photo">
-                                    <img src="images/alexandr.png" alt="alexandr">
-                                </div>
-                                <div class="team__discription">
-                                    <h3 class="h3-caps">команда</h3>
-                                    <blockquote class="hero team__hero">
-                                        Ми звикли брати на себе відповідальність та завжди 
-                                        гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, 
-                                        коли більшість безсилі.
-                                    </blockquote>
-                                    <figcaption>
-                                        <h4 class="team__name">Олександр Олександровський</h4>
-                                        <span class="team__position">Керуючий партнер</span>
+                                        <span class="team__name">Сергій Бінн</span>
+                                        <span class="team__position">Associate</span>
                                     </figcaption>
                                 </div>
                             </div>
@@ -276,53 +286,53 @@
             <div class="brand">
                 <h3 class="h3-caps brand__h3-caps">They already trust us</h3>
                 <div class="brand__grid-box">
-                    <a class="brand__img" href="#"><img src="images/hillel.png" alt="hillel"></a>
-                    <a class="brand__img" href="#"><img src="images/wannabiz.png" alt="wannabiz"></a>
-                    <a class="brand__img" href="#"><img src="images/targerin.png" alt="targerine"></a>
-                    <a class="brand__img" href="#"><img src="images/3d_look.png" alt="3d_look"></a>
-                    <a class="brand__img" href="#"><img src="images/orangear.png" alt="orangear"></a>
-                    <a class="brand__img" href="#"><img src="images/adtelligent.png" alt="adtelligent"></a>
-                    <a class="brand__img mobile-none" href="#"><img src="images/clickky.png" alt="clickky"></a>
-                    <a class="brand__img mobile-none" href="#"><img src="images/eco-leasing.png" alt="eco-leasing"></a>
-                    <a class="brand__img mobile-none" href="#"><img src="images/infatek.png" alt="infratek"></a>
-                    <a class="brand__img mobile-none" href="#"><img src="images/city-park.png" alt="city-park"></a>
-                    <a class="brand__img mobile-none" href="#"><img src="images/art-print_studio.png" alt="art-print_studio"></a>
-                    <a class="brand__img mobile-none" href="#"><img src="images/ultimate_card.png" alt="ultimate_card"></a>
+                    <a class="brand__img hillel" href="#"><img src="images/hillel.svg" alt="hillel"></a>
+                    <a class="brand__img wannabiz" href="#"><img src="images/wannabiz.svg" alt="wannabiz"></a>
+                    <a class="brand__img targerine" href="#"><img src="images/tapgerine.svg" alt="targerine"></a>
+                    <a class="brand__img d_look" href="#"><img src="images/3dlook.svg" alt="3d_look"></a>
+                    <a class="brand__img orangear" href="#"><img src="images/orangear.svg" alt="orangear"></a>
+                    <a class="brand__img adtelligent" href="#"><img src="images/adtelligent.svg" alt="adtelligent"></a>
+                    <a class="brand__img mobile-none clickky" href="#"><img src="images/clickky.svg" alt="clickky"></a>
+                    <a class="brand__img mobile-none eco-leasing" href="#"><img src="images//eco-leasing.svg" alt="eco-leasing"></a>
+                    <a class="brand__img mobile-none infratek" href="#"><img src="images/ingratek.svg" alt="infratek"></a>
+                    <a class="brand__img mobile-none city-park" href="#"><img src="images/city-par.svg" alt="city-park"></a>
+                    <a class="brand__img mobile-none art-print_studio" href="#"><img src="images/artprint.svg" alt="art-print_studio"></a>
+                    <a class="brand__img mobile-none ultimate_card" href="#"><img src="images/ultimatecard.svg" alt="ultimate_card"></a>
                 </div>
             </div>
             <div class="article">
                 <div class="container">
                     <div class="article__wrapper">
-                        <a class="article__btn" href="#"><h3 class="h3-caps">Publications</h3></a>
-                        <span class="hero article__hero">We have something to tell</span>
+                        <a class="article__btn h3-caps" href="#">Publications</a>
+                        <h2 class="hero article__hero">We have something to tell</h2>
                         <div class="article__grid-box">
                             <div class="article__card">
                                 <div class="article__card-img">
-                                    <img src="images/equity.png" alt="equity">
+                                    <a href="#"><img src="images/equity.png" alt="equity"></a>
                                 </div>
                                 <div class="article__card-body">
-                                    <h4 class="article__title">Equity associate</h4>
-                                    <span class="article__date h3-caps">April 22</span>
+                                    <a class="article__title" href="#"><h4>Equity associate</h4></a>
+                                    <time datetime="22-04-2021" class="article__date h3-caps">April 22</time>
                                     <p class="article__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
                                 </div>
                             </div>
                             <div class="article__card">
                                 <div class="article__card-img">
-                                    <img src="images/gdpr.png" alt="gdpr">
+                                    <a href="#"><img src="images/gdpr.png" alt="gdpr"></a>
                                 </div>
                                 <div class="article__card-body">
-                                    <h4 class="article__title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
-                                    <span class="article__date h3-caps">September 29</span>
+                                    <a class="article__title" href="#"><h4>Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4></a>
+                                    <time datetime="19-08-2021" class="article__date h3-caps">September 29</time>
                                     <p class="article__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
                                 </div>
                             </div>
                             <div class="article__card">
                                 <div class="article__card-img">
-                                    <img src="images/testament.png" alt="testament">
+                                    <a href="#"><img src="images/testament.png" alt="testament"></a>
                                 </div>
                                 <div class="article__card-body">
-                                    <h4 class="article__title">Millennial Testament</h4>
-                                    <span class="article__date h3-caps">August 19</span>
+                                    <a class="article__title" href="#"><h4>Millennial Testament</h4></a>
+                                    <time datetime="19-08-2022" class="article__date h3-caps">August 19</time>
                                     <p class="article__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
                                 </div>
                             </div>
@@ -330,29 +340,30 @@
                     </div>
                 </div>
             </div>
+            <a class="back" href="#wrapper">back</a>
         </main>
         <footer id="footer">
             <div class="footer__wrapper">
                 <div class="container">
                     <div class="footer">
                         <ul class="footer__address">
-                            <li class="head__info-contact">
-                                <a class="head__contact-link head__contact-link--fw-reg" href="#">
+                            <li class="footer__info-contact">
+                                <a class="footer__contact-link footer__contact-link--fw-reg" href="#">
                                     <address>Kyiv, Mechnikova str, 14/1</address>
                                 </a>
                             </li>
-                            <li class="head__info-contact">
-                                <a class="head__info-contact--foot-fz head__info-contact--foot-color" href="#">On map</a>
+                            <li class="footer__info-contact">
+                                <a class="footer__info-contact--foot-fz footer__info-contact--foot-color" href="#">On map</a>
                             </li>
                         </ul>
                         <ul class="footer__contact">
-                            <li class="head__info-contact">
-                                <a class="head__contact-link head__fb footer__fb head__info-contact--foot-color" href="#">
+                            <li class="footer_info-contact">
+                                <a class="footer__contact-link footer__fb footer__info-contact--foot-color" href="#">
                                     <span class="icon-facebook"></span>
                                 </a>
                             </li>
-                            <li class="head__info-contact"><a class="head__contact-link" href="tel:0800211927">0800 211 927</a></li>
-                            <li class="head__info-contact"><a class="head__contact-link head__info-contact--foot-color" href="mail:contact@forstudy.space">contact@forstudy.space</a></li>
+                            <li class="footer__info-contact"><a class="footer__contact-link" href="tel:0800211927">0800 211 927</a></li>
+                            <li class="footer__info-contact"><a class="footer__contact-link footer__info-contact--foot-color" href="mailto:contact@forstudy.space">contact@forstudy.space</a></li>
                         </ul>
                         <div class="footer__c"><span>© 2021 HLEGAL Law company, LLC</span></div>
                     </div>
@@ -362,7 +373,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.mySwiper', {
             loop: true,
 
             pagination: {
@@ -370,7 +381,25 @@
                 clickable: true,
             },
         });
+        var swiper2 = new Swiper(".mySwiper2", {
+        direction: "vertical",
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper3 = new Swiper(".mySwiper3", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 4,
+        mousewheel: true,
+        thumbs: {
+            mySwiper3: mySwiper2,
+        },
+      });
     </script>
+
+
     <!-- <script>
         const swiper_check = new Swiper('.menu-check__swiper', {
             loop: true,

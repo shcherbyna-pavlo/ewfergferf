@@ -5,7 +5,7 @@
     width: 100%;
     font-weight: 700;
     line-height: 20px;
-    z-index: 1;
+    z-index: 5;
 
     @media (min-width:768px) {
         padding: 50px 0;
@@ -15,6 +15,11 @@
         @media (max-width:767px) {
             padding: 0;
         }
+    }
+
+    .light-hedear & {
+        position: relative;
+        z-index: 0;
     }
 }
 
@@ -110,7 +115,6 @@
     }
 }
 
-
 .head {
 
     @media (min-width:768px) {
@@ -195,13 +199,18 @@
         padding: 5px 7px;
         border-radius: 8px;
 
-        &--active {
-            background: $lang-link--active;
-        }
-
         &:hover {
             background: $head__lang-hover;
         }
+
+        &--active {
+            background: $lang-link--active;
+
+            &:hover {
+                background: $lang-link--active;
+            }
+        }
+
     }
 
     &__contact-link {
@@ -255,6 +264,8 @@
             justify-content: end;
             width: 100%;
             height: auto;
+            border-radius: 0;
+            overflow: visible;
         }
     }
 
@@ -312,12 +323,12 @@
     }
 }
 
-.contact-page {
+.light-hedear {
 
-    #header {
-        position: relative;
-        z-index: 0;
-    }
+    // #header {
+    //     position: relative;
+    //     z-index: 0;
+    // }
 
     .head {
         &__logo {
@@ -325,6 +336,7 @@
             position: relative;
             font-size: 20px;
             line-height: 24px;
+            z-index: 0;
 
             @media (min-width:768px) {
                 font-size: 36px;
@@ -361,9 +373,17 @@
 
         &__lang-link {
             color: #B3B3BA;
+            
+            &:hover {
+                background: #F5F5FA;
+            }
 
             &--active {
                 color: #fff;
+                
+                &:hover {
+                    background: $lang-link--active;
+                }
             }
         }
 
@@ -373,9 +393,30 @@
 
         &__menu-link {
             color: #24A3FF;
+            ;
 
+            &:hover:before {
+                background: #24A3FF;
+            }
+            
             &--active {
                 color: #F0145A;
+                
+                &:hover:before {
+                    background: #F0145A;
+                }
+
+                &:before {
+                    width: 100%;
+                    background: #F0145A;
+                }
+            }
+        }
+
+        &__fb {
+            transition: all .8s;
+            &:hover {
+                color: $head__fb-hover;
             }
         }
 
